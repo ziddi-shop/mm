@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleman Cosmos - Tele Deal Commanders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0f7fa;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #00eaff;
+            text-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            color: #b3e5fc;
+            margin-bottom: 40px;
+        }
+        .cta-button {
+            padding: 15px 40px;
+            background: #ff00ff;
+            color: #000;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 2px solid #00eaff;
+            box-shadow: 0 0 10px #ff00ff;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background: #00eaff;
+            color: #fff;
+            box-shadow: 0 0 20px #00eaff;
+            transform: scale(1.05);
+        }
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2.8rem;
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2rem;
+            color: #b3e5fc;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #00eaff;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.5);
+        }
+        .feature-card h3 {
+            font-size: 1.7rem;
+            color: #ff00ff;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            font-size: 1rem;
+            color: #e0f7fa;
+        }
+        .contact {
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.8rem;
+            color: #00eaff;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            color: #b3e5fc;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .section h2 {
+                font-size: 2rem;
+            }
+            .feature-card {
+                padding: 15px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <h1>Middleman Cosmos</h1>
+        <p>Command the tele universe with the ultimate platform for dealmakers who rule the stars.</p>
+        <a href="#contact" class="cta-button">Join the Cosmos</a>
+    </header>
+
+    <section class="section" id="about">
+        <h2>Who Are Middlemen?</h2>
+        <p>Middlemen are the legendary linkers of the tele world  uniting buyers and sellers across realms, closing powerful deals, and anchoring trust in every exchange..</p>
+    </section>
+
+    <section class="section" id="importance">
+        <h2>Why Middlemen Are Stellar</h2>
+        <p>Middlemen are the lifeblood of tele deals. Here’s why they shine:</p>
+        <ul style="text-align: left; max-width: 600px; margin: 20px auto; list-style: none;">
+            <li><strong>Trust Forgers:</strong> Build unbreakable bonds between parties.</li>
+            <li><strong>Deal Masters:</strong> Optimize negotiations with interstellar precision.</li>
+            <li><strong>Market Oracles:</strong> Master the market with sharp insights and unstoppable dominance..</li>
+            <li><strong>Conflict Navigators:</strong> Resolve disputes with galactic finesse.</li>
+        </ul>
+    </section>
+
+    <section class="section" id="features">
+        <h2>MM Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Deal Calculator</h3>
+                <p>Instantly calculate deal profits with a stellar tool.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure Escrow</h3>
+                <p>Galactic payment protection for every transaction.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Live Market Pulse</h3>
+                <p>Real-time tele market data from across the universe.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Virtual Meet Scheduler</h3>
+                <p>Schedule meetings with buyers and sellers efficiently..</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Connect with the Cosmos</h2>
+        <p>Ready to dominate the tele galaxy? Link up with us and ascend to new heights.</p>
+        <a href="telegram:t.me/ziddi_mm" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ziddi Middleman . All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Parallax Effect
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            const scrolled = window.pageYOffset;
+            hero.style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+        });
+    </script>
+</body>
+</html>
